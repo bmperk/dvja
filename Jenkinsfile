@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Publish to S3') {
       steps {
-        sh "aws s3 cp /var/lib/jenkins/workspace/dvja/target/dvja-1.0-SNAPSHOT.war s3://CHANGE-ME/dvja-1.0-SNAPSHOT.war"
+        sh "aws s3 cp /var/lib/jenkins/workspace/dvja/target/dvja-1.0-SNAPSHOT.war s3://ako-devsecops-lab-2020-buildartifacts-1wc3v2norh1pq/dvja-1.0-SNAPSHOT.war"
       }
     }
     stage('Tidy up') {
